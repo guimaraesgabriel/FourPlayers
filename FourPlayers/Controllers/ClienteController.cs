@@ -21,7 +21,7 @@ namespace FourPlayers.Controllers
                 .Where(a => !a.Deletado)
                 .Select(a => new
                 {
-                    //a.Id,
+                    a.Id,
                     a.Nome,
                     DataNascimento = a.DataNascimento.HasValue == true ? a.DataNascimento.Value.ToString("dd/MM/yyyy") : "",
                     a.Email,
