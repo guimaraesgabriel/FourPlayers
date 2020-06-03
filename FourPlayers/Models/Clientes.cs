@@ -43,6 +43,6 @@ namespace FourPlayers.Models
 
 
         //ICOLLECTION
-        public ICollection<ClientesHistoricos> HistoricosClientes { get; set; }
+        public ICollection<ClientesHistoricos> ClientesHistoricos { get; set; }
     }
 }
