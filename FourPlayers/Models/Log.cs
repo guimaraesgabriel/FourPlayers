@@ -26,5 +26,9 @@ namespace FourPlayers.Models
 
         [ForeignKey("UsuarioId")]
         public virtual Usuarios Usuario { get; set; }
+
+
+        //ICOLLECTIONS
+
     }
 }

@@ -28,13 +28,12 @@ namespace FourPlayers.Models
 
 
         //FK
-        public int StatusId { get; set; }
-
-        public virtual StatusJogos StatusJogos { get; set; }
 
 
         //ICOLLECTIONS
         public ICollection<JogosImagens> ImagensJogos { get; set; }
         public ICollection<JogosCategorias> JogosCategorias { get; set; }
+        public ICollection<JogosContas> JogosContas { get; set; }
+        public ICollection<Reservas> Reservas { get; set; }
     }
 }

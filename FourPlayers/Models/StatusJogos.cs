@@ -16,6 +16,6 @@ namespace FourPlayers.Models
 
 
         //ICOLLECTIONS
-        public ICollection<Jogos> Jogos { get; set; }
+        public ICollection<JogosContas> JogosContas { get; set; }
     }
 }

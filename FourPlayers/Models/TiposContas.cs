@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace FourPlayers.Models
@@ -12,5 +11,11 @@ namespace FourPlayers.Models
         [MaxLength(100)]
         public string Nome { get; set; }
 
+
+        //FK
+
+
+        //ICOLLECTIONS
+        public ICollection<JogosContas> JogosContas { get; set; }
     }
 }

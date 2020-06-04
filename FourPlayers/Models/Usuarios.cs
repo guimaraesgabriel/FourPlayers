@@ -42,7 +42,9 @@ namespace FourPlayers.Models
         public virtual GruposUsuarios GruposUsuarios { get; set; }
 
 
-        //ICOLLECTION
+        //ICOLLECTIONS
+        public ICollection<Consoles> Consoles { get; set; }
+        public ICollection<Despesas> Despesas { get; set; }
         public ICollection<Log> Log { get; set; }
     }
 }

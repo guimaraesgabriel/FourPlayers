@@ -9,7 +9,7 @@ namespace FourPlayers.Models
         public int Id;
 
         [MaxLength(255)]
-        public string URL{ get; set; }
+        public string URL { get; set; }
 
 
         //FK
@@ -17,5 +17,9 @@ namespace FourPlayers.Models
 
         [ForeignKey("JogoId")]
         public virtual Jogos Jogos { get; set; }
+
+
+        //ICOLLECTIONS
+
     }
 }

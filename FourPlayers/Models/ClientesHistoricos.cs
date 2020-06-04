@@ -22,9 +22,7 @@ namespace FourPlayers.Models
         public virtual Clientes Clientes { get; set; }
 
 
-        public int? PlanoId { get; set; }
+        //ICOLLECTIONS
 
-        [ForeignKey("PlanoId")]
-        public virtual Planos Planos { get; set; }
     }
 }

@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
 namespace FourPlayers.Models
 {
@@ -14,14 +11,21 @@ namespace FourPlayers.Models
 
         public DateTime Datainicio { get; set; }
 
-        public int ClientId { get; set; }
 
-        [ForeignKey("ClientId")]
+        //FK
+        public int ClienteId { get; set; }
+
+        [ForeignKey("ClienteId")]
         public virtual Clientes Clientes { get; set; }
+
 
         public int JogoContaId { get; set; }
 
         [ForeignKey("JogoContaId")]
         public virtual JogosContas JogosContas { get; set; }
+
+
+        //ICOLLECTIONS
+
     }
 }

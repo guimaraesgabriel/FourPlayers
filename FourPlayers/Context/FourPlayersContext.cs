@@ -21,14 +21,22 @@ namespace FourPlayers.Context
 
         public DbSet<Categorias> Categorias { get; set; }
         public DbSet<Clientes> Clientes { get; set; }
+        public DbSet<ClientesAlugueis> ClientesAlugueis { get; set; }
         public DbSet<ClientesHistoricos> ClientesHistoricos { get; set; }
+        public DbSet<ClientesPlanos> ClientesPlanos { get; set; }
+        public DbSet<Consoles> Consoles { get; set; }
+        public DbSet<Despesas> Despesas { get; set; }
         public DbSet<GruposUsuarios> GruposUsuarios { get; set; }
         public DbSet<Jogos> Jogos { get; set; }
         public DbSet<JogosCategorias> JogosCategorias { get; set; }
+        public DbSet<JogosContas> JogosContas { get; set; }
         public DbSet<JogosImagens> JogosImagens { get; set; }
         public DbSet<Log> Logs { get; set; }
         public DbSet<Planos> Planos { get; set; }
+        public DbSet<Reservas> Reservas { get; set; }
         public DbSet<StatusJogos> StatusJogos { get; set; }
+        public DbSet<TiposConsoles> TiposConsoles { get; set; }
+        public DbSet<TiposContas> TiposContas { get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
     }
 }

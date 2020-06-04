@@ -37,12 +37,12 @@ namespace FourPlayers.Models
 
 
         //FK
-        public int? PlanoId { get; set; }
-
-        public virtual Planos Planos { get; set; }
 
 
-        //ICOLLECTION
+        //ICOLLECTIONS
+        public ICollection<ClientesAlugueis> ClientesAlugueis { get; set; }
         public ICollection<ClientesHistoricos> ClientesHistoricos { get; set; }
+        public ICollection<ClientesPlanos> ClientesPlanos { get; set; }
+        public ICollection<Reservas> Reservas { get; set; }
     }
 }

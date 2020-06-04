@@ -19,7 +19,7 @@ namespace FourPlayers.Models
         //FK
 
 
-        //ICOLLECTION
+        //ICOLLECTIONS
         public ICollection<Usuarios> Usuarios { get; set; }
     }
 }

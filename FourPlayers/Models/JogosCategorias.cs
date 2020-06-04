@@ -8,6 +8,7 @@ namespace FourPlayers.Models
         [Key]
         public int Id { get; set; }
 
+
         //FK
         public int CategoriaId { get; set; }
 
@@ -19,5 +20,9 @@ namespace FourPlayers.Models
 
         [ForeignKey("JogoId")]
         public virtual Jogos Jogos { get; set; }
+
+
+        //ICOLLECTIONS
+
     }
 }
