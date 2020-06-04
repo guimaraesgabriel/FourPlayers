@@ -25,8 +25,6 @@ namespace FourPlayers.Controllers
                     Cliente = a.Clientes.Nome,
                     a.Data,
                     a.Descricao,
-                    a.PlanoId,
-                    Plano = a.Planos.Nome,
                 })
                 .ToList();
 

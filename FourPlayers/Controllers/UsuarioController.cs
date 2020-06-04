@@ -106,7 +106,7 @@ namespace FourPlayers.Controllers
 
                 usuarioNovo.DataCadastro = usuarioAntigo.DataCadastro;
                 usuarioNovo.Senha = usuarioAntigo.Senha;
-                usuarioNovo.Hash = usuarioAntigo.Hash;
+                usuarioNovo.GUID = usuarioAntigo.GUID;
 
                 dbContext.Entry(usuarioAntigo).CurrentValues.SetValues(usuarioNovo);
                 dbContext.SaveChanges();
@@ -141,7 +141,7 @@ namespace FourPlayers.Controllers
                 {
                     usuario.DataCadastro = DateTime.Now;
                     usuario.Senha = tool.Criptografar(usuario.Senha);
-                    usuario.Hash = tool.Criptografar(usuario.DataCadastro + "-" + usuario.Id);
+                    usuario.GUID = Guid.NewGuid().ToString();
 
                     dbContext.Usuarios.Add(usuario);
                     dbContext.SaveChanges();

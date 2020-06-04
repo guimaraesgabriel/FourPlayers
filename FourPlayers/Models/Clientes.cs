@@ -29,7 +29,7 @@ namespace FourPlayers.Models
         public DateTime DataCadastro { get; set; }
 
         [MaxLength(100)]
-        public string Hash { get; set; }
+        public string GUID { get; set; }
 
         public bool Ativo { get; set; }
 

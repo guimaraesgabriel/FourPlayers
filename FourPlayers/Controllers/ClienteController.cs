@@ -25,8 +25,6 @@ namespace FourPlayers.Controllers
                     a.Nome,
                     DataNascimento = a.DataNascimento.HasValue == true ? a.DataNascimento.Value.ToString("dd/MM/yyyy") : "",
                     a.Email,
-                    a.PlanoId,
-                    Plano = a.Planos.Nome,
                     a.Telefone,
                     a.Telefone2,
                     a.DataCadastro,
@@ -51,8 +49,6 @@ namespace FourPlayers.Controllers
                     a.Nome,
                     DataNascimento = a.DataNascimento.HasValue == true ? a.DataNascimento.Value.ToString("dd/MM/yyyy") : "",
                     a.Email,
-                    a.PlanoId,
-                    Plano = a.Planos.Nome,
                     a.Telefone,
                     a.Telefone2,
                     a.DataCadastro,
@@ -76,8 +72,6 @@ namespace FourPlayers.Controllers
                     a.Nome,
                     DataNascimento = a.DataNascimento.HasValue == true ? a.DataNascimento.Value.ToString("dd/MM/yyyy") : "",
                     a.Email,
-                    a.PlanoId,
-                    Plano = a.Planos.Nome,
                     a.Telefone,
                     a.Telefone2,
                     a.DataCadastro,
@@ -106,7 +100,7 @@ namespace FourPlayers.Controllers
 
                 clienteNovo.DataCadastro = clienteAntigo.DataCadastro;
                 clienteNovo.Senha = clienteAntigo.Senha;
-                clienteNovo.Hash = clienteAntigo.Hash;
+                clienteNovo.GUID = clienteAntigo.GUID;
 
                 dbContext.Entry(clienteAntigo).CurrentValues.SetValues(clienteNovo);
                 dbContext.SaveChanges();
@@ -141,7 +135,7 @@ namespace FourPlayers.Controllers
                 {
                     cliente.DataCadastro = DateTime.Now;
                     cliente.Senha = tool.Criptografar(cliente.Senha);
-                    cliente.Hash = tool.Criptografar(cliente.DataCadastro + "-" + cliente.Id);
+                    cliente.GUID = Guid.NewGuid().ToString();
 
                     dbContext.Clientes.Add(cliente);
                     dbContext.SaveChanges();

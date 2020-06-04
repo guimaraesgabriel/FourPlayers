@@ -9,7 +9,9 @@ namespace FourPlayers.Models
         [Key]
         public int Id { get; set; }
 
-        public DateTime Datainicio { get; set; }
+        public DateTime DataInicio { get; set; }
+
+        public DateTime DataEntrega { get; set; }
 
 
         //FK

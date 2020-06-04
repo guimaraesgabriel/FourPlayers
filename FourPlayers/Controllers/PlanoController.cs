@@ -25,7 +25,7 @@ namespace FourPlayers.Controllers
                     a.Nome,
                     a.DataCadastro,
                     a.Duracao,
-                    a.QuantidadeJogos,
+                    a.QuantidadeTrocas,
                     a.Valor,
                     a.Deletado,
                 })
@@ -46,7 +46,7 @@ namespace FourPlayers.Controllers
                     a.Nome,
                     a.DataCadastro,
                     a.Duracao,
-                    a.QuantidadeJogos,
+                    a.QuantidadeTrocas,
                     a.Valor,
                     a.Deletado,
                 })

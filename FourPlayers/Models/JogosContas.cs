@@ -31,7 +31,7 @@ namespace FourPlayers.Models
         public int ConsoleId { get; set; }
 
         [ForeignKey("ConsoleId")]
-        public virtual Consoles Consoles { get; set; }
+        public virtual UsuariosConsoles Consoles { get; set; }
 
 
         //ICOLLECTIONS

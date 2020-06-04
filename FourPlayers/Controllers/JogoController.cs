@@ -29,8 +29,6 @@ namespace FourPlayers.Controllers
                     a.Pontuacao,
                     a.Sinopse,
                     a.DataCadastro,
-                    a.StatusId,
-                    a.StatusJogos,
                     a.Ativo,
                     a.Deletado,
                 })
@@ -54,8 +52,6 @@ namespace FourPlayers.Controllers
                     a.Pontuacao,
                     a.Sinopse,
                     a.DataCadastro,
-                    a.StatusId,
-                    a.StatusJogos,
                     a.Ativo,
                     a.Deletado,
                 })
@@ -78,8 +74,6 @@ namespace FourPlayers.Controllers
                     a.Pontuacao,
                     a.Sinopse,
                     a.DataCadastro,
-                    a.StatusId,
-                    a.StatusJogos,
                     a.Ativo,
                     a.Deletado,
                 })
@@ -247,6 +241,7 @@ namespace FourPlayers.Controllers
             catch (Exception ex)
             {
                 return false;
+                throw ex;
             }
         }
     }

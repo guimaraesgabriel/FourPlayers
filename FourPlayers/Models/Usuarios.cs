@@ -29,7 +29,7 @@ namespace FourPlayers.Models
         public DateTime DataCadastro { get; set; }
 
         [MaxLength(100)]
-        public string Hash { get; set; }
+        public string GUID { get; set; }
 
         public bool Ativo { get; set; }
 
@@ -43,8 +43,8 @@ namespace FourPlayers.Models
 
 
         //ICOLLECTIONS
-        public ICollection<Consoles> Consoles { get; set; }
-        public ICollection<Despesas> Despesas { get; set; }
+        public ICollection<UsuariosConsoles> Consoles { get; set; }
+        public ICollection<MovimentacoesFinanceiras> Despesas { get; set; }
         public ICollection<Log> Log { get; set; }
     }
 }

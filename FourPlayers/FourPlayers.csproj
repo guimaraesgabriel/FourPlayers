@@ -200,8 +200,8 @@
     <Compile Include="Models\Clientes.cs" />
     <Compile Include="Models\ClientesAlugueis.cs" />
     <Compile Include="Models\ClientesPlanos.cs" />
-    <Compile Include="Models\Consoles.cs" />
-    <Compile Include="Models\Despesas.cs" />
+    <Compile Include="Models\UsuariosConsoles.cs" />
+    <Compile Include="Models\MovimentacoesFinanceiras.cs" />
     <Compile Include="Models\GruposUsuarios.cs" />
     <Compile Include="Models\ClientesHistoricos.cs" />
     <Compile Include="Models\JogosContas.cs" />
@@ -212,7 +212,7 @@
     <Compile Include="Models\Planos.cs" />
     <Compile Include="Models\Reservas.cs" />
     <Compile Include="Models\StatusJogos.cs" />
-    <Compile Include="Models\TiposConsoles.cs" />
+    <Compile Include="Models\Consoles.cs" />
     <Compile Include="Models\TiposContas.cs" />
     <Compile Include="Models\Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
