@@ -65,6 +65,10 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
@@ -194,14 +198,22 @@
     <Compile Include="Helpers\Tools.cs" />
     <Compile Include="Models\Categorias.cs" />
     <Compile Include="Models\Clientes.cs" />
+    <Compile Include="Models\ClientesAlugueis.cs" />
+    <Compile Include="Models\ClientesPlanos.cs" />
+    <Compile Include="Models\Consoles.cs" />
+    <Compile Include="Models\Despesas.cs" />
     <Compile Include="Models\GruposUsuarios.cs" />
     <Compile Include="Models\ClientesHistoricos.cs" />
+    <Compile Include="Models\JogosContas.cs" />
     <Compile Include="Models\JogosImagens.cs" />
     <Compile Include="Models\JogosCategorias.cs" />
     <Compile Include="Models\Jogos.cs" />
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\Planos.cs" />
+    <Compile Include="Models\Reservas.cs" />
     <Compile Include="Models\StatusJogos.cs" />
+    <Compile Include="Models\TiposConsoles.cs" />
+    <Compile Include="Models\TiposContas.cs" />
     <Compile Include="Models\Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
