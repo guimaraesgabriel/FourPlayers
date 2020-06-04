@@ -30,8 +30,8 @@ namespace FourPlayers.Context
         public DbSet<JogosCategorias> JogosCategorias { get; set; }
         public DbSet<JogosContas> JogosContas { get; set; }
         public DbSet<JogosImagens> JogosImagens { get; set; }
-        public DbSet<Log> Logs { get; set; }
-        public DbSet<MovimentacoesFinanceiras> Despesas { get; set; }
+        public DbSet<Log> Log { get; set; }
+        public DbSet<MovimentacoesFinanceiras> MovimentacoesFinanceiras { get; set; }
         public DbSet<Planos> Planos { get; set; }
         public DbSet<Reservas> Reservas { get; set; }
         public DbSet<StatusJogos> StatusJogos { get; set; }

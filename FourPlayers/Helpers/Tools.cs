@@ -37,7 +37,7 @@ namespace FourPlayers.Helpers
 
             try
             {
-                dbContext.Logs.Add(l);
+                dbContext.Log.Add(l);
                 dbContext.SaveChanges();
             }
             catch (Exception ex)
@@ -45,11 +45,11 @@ namespace FourPlayers.Helpers
                 l = new Log();
                 l.Data = DateTime.Now;
                 l.Tela = "ERRO Log";
-                l.Descricao = "ERRO AO SALVAR Logs " + ex.Message;
+                l.Descricao = "ERRO AO SALVAR Log " + ex.Message;
                 l.UsuarioId = usuarioId;
                 l.Acao = "ERRO";
 
-                dbContext.Logs.Add(l);
+                dbContext.Log.Add(l);
                 dbContext.SaveChanges();
             }
         }
