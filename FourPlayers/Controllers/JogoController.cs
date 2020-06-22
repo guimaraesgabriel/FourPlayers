@@ -202,6 +202,7 @@ namespace FourPlayers.Controllers
         }
 
         [HttpPost]
+        [Route("api/Jogo/Upload")]
         public bool Upload(int id)
         {
             try

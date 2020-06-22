@@ -1,5 +1,4 @@
 ﻿using FourPlayers.Context;
-using FourPlayers.Helpers;
 using FourPlayers.Models;
 using System;
 using System.Collections.Generic;
@@ -8,22 +7,24 @@ using System.Web.Http;
 
 namespace FourPlayers.Controllers
 {
-    public class ClienteHistoricoController : ApiController
+    public class ClienteAluguelController : ApiController
     {
         private FourPlayersContext dbContext = new FourPlayersContext();
 
         [HttpGet]
-        [Route("api/ClienteHistorico/GetAll")]
+        [Route("api/ClienteAluguel/GetAll")]
         public IEnumerable<object> GetAll()
         {
-            var lst = dbContext.ClientesHistoricos
+            var lst = dbContext.ClientesAlugueis
                 .Select(a => new
                 {
                     a.Id,
                     a.ClienteId,
                     Cliente = a.Clientes.Nome,
-                    a.Data,
-                    a.Descricao,
+                    a.DataAluguel,
+                    a.DataEntrega,
+                    a.JogoContaId,
+                    Jogo = a.JogosContas.Jogos.Nome,
                 })
                 .ToList();
 
@@ -31,7 +32,7 @@ namespace FourPlayers.Controllers
         }
 
         [HttpPost]
-        public object Save(ClientesHistoricos historico)
+        public object Save(ClientesAlugueis aluguel)
         {
             var insere = true;
             var erro = string.Empty;
@@ -40,9 +41,9 @@ namespace FourPlayers.Controllers
             {
                 try
                 {
-                    historico.Data = DateTime.Now;
+                    aluguel.DataAluguel = DateTime.Now;
 
-                    dbContext.ClientesHistoricos.Add(historico);
+                    dbContext.ClientesAlugueis.Add(aluguel);
                     dbContext.SaveChanges();
 
                     transaction.Commit();

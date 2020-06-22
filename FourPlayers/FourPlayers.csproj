@@ -185,12 +185,21 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Context\FourPlayersContext.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\ClienteAluguelController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\ClienteHistoricoController.cs" />
+    <Compile Include="Controllers\ClientePlanoController.cs" />
+    <Compile Include="Controllers\ConsoleController.cs" />
     <Compile Include="Controllers\GrupoUsuarioController.cs" />
+    <Compile Include="Controllers\JogoCategoriaController.cs" />
+    <Compile Include="Controllers\JogoContaController.cs" />
     <Compile Include="Controllers\JogoController.cs" />
+    <Compile Include="Controllers\JogoImagemController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MovimentacaoFinanceiraController.cs" />
     <Compile Include="Controllers\PlanoController.cs" />
+    <Compile Include="Controllers\ReservaController.cs" />
+    <Compile Include="Controllers\UsuarioConsoleController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

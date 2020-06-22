@@ -11,6 +11,8 @@ namespace FourPlayers.Models
         [MaxLength(100)]
         public string Nome { get; set; }
 
+        public bool Deletado { get; set; }
+
 
         //FK
 

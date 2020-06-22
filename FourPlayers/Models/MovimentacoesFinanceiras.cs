@@ -18,6 +18,8 @@ namespace FourPlayers.Models
 
         public DateTime Data { get; set; }
 
+        public bool Deletado { get; set; }
+
 
         //FK
         public int? UsuarioId { get; set; }
